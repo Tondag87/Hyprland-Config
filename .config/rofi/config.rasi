@@ -1,0 +1,87 @@
+/** Basic config file **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "﩯 ";
+  /**display-drun: ""﩯;**/
+  display-window: "﩯 ";
+  display-combi: "  ";
+  font: "JetBrainsMono Nerd Font Bold 14";
+}
+@theme "/dev/null"
+
+* {
+  bg: #2e344095;
+  bg-alt: #3e455200;
+  bg-txt: #ffffff00;
+  bg-alt1: #2e3440;
+
+  fg: #FFFFFF;
+  fg-alt: #4c5662;
+
+  background-color: @bg-alt;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 25%;
+}
+
+element {
+  padding: 4 3;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-text {
+  text-color: inherit;
+  padding: 10 10 0 0;
+  vertical-align: 0.5;
+  background-color: @bg-txt;
+}
+
+element-icon {
+  size: 14;
+  padding: 0 10 0 0;
+}
+
+entry {
+  background-color: @bg-alt1;
+  padding: 12;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @bg-alt1;
+}
+
+listview {
+  padding: 0 12;
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @bg;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+/* vim: ft=sass
+
