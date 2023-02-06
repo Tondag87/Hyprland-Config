@@ -1,6 +1,5 @@
 * {
     border: none;
-    border-radius: 0;
     font-family: JetBrains Mono Nerd Font, monospace;
     font-weight: bold;
     font-size: 14px;
@@ -8,7 +7,7 @@
 }
 
 window#waybar {
-    background: rgba(76, 86, 106, 0);
+    background: #2e3440;
     color: #ffffff;
 }
 
@@ -17,14 +16,13 @@ tooltip {
     border-radius: 0px;
     border-width: 2px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #2e3440;
 }
 
 #workspaces button {
     padding: 5px;
     color: #ffffff;
     margin-right: 5px;
-    border-radius: 0px;
 }
 
 #workspaces button.active {
@@ -44,9 +42,9 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 10px;
+    background: #2e3440;
+    color: #5E81AC;
+    border-radius: 4px;
 }
 
 #custom-language,
@@ -74,11 +72,13 @@ tooltip {
 }
 
 #workspaces {
-    background: #4c566a;
+    background: #2e3440;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
     padding-left: 5px;
+    border-color: #2e3440;
+    border-style: solid;
 }
 
 #custom-caffeine {
@@ -114,7 +114,9 @@ tooltip {
     margin-right: 8px;
     border-right: 0px;
     border-left: 0px;
-    background: #4c566a;
+    background: #2e3440;
+    border-color: #2e3440;
+    border-style: solid;
 }
 
 #network {
@@ -127,8 +129,10 @@ tooltip {
     color: #ffffff;
     border-left: 0px;
     border-right: 0px;
-    border-radius: 0px 0px 0px 0px;
-    background: #4c566a;
+    border-radius: 10px 0px 0px 10px;
+    background: #2e3440;
+    border-color: #2e3440;
+    border-style: solid;
 }
 
 #pulseaudio.microphone {
